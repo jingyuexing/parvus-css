@@ -69,3 +69,10 @@ text-transform:${rule};
 `
     }
 })
+
+append(/text-(left|center|right|justify|start|end)/,(className,rule)=>{
+    return `
+${generatorClss(className)}{
+    text-align: ${rule};
+}`
+})

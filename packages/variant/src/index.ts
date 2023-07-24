@@ -10,4 +10,6 @@ import "./border"
 import "./important"
 import "./typography"
 import "./margin"
+import "./selector"
 import "./boot"
+
