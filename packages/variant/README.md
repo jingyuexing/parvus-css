@@ -3,5 +3,5 @@
 The library automatically scans classes within the DOM to generate styles based on rules, and is very small because it has no external dependencies.
 
 ```bash
-npm install parvus-css
+npm install @parvus-css/variant
 ```
