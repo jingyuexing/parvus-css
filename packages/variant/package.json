@@ -1,0 +1,51 @@
+{
+  "name": "parvus-css",
+  "version": "0.0.1",
+  "description": "An atomic CSS library based on runtime.",
+  "type": "module",
+  "author": "jingyuexing",
+  "license": "MIT",
+  "homepage": "https://github.com/jingyuexing/parvus-css#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jingyuexing/parvus-css.git"
+  },
+   "bugs": {
+    "url": "https://github.com/jingyuexing/parvus-css/issues"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+
+  "main": "dist/index.cjs",
+  "files": [
+    "dist",
+    "*.d.ts",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "deno:run": "deno run src/generator.ts",
+    "test": "tsc && node dist/generator.js",
+    "build":"npx rollup -c"
+  },
+  "keywords": [
+    "CSS",
+    "generator",
+    "tailwindcss"
+  ],
+  
+  "devDependencies": {
+    "@rollup/plugin-alias": "^5.0.0",
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "rollup": "^3.26.3",
+    "rollup-plugin-dts": "^5.3.0",
+    "rollup-plugin-esbuild": "^5.0.0",
+    "typescript": "^5.1.6"
+  }
+}

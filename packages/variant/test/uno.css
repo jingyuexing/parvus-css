@@ -1,0 +1,301 @@
+html.scroll-lock {
+    position: fixed;
+    overflow-y: scroll;
+    top: var(--window-scroll-top);
+    width: 100%
+}
+
+.fade-move,
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity var(--fade-opacity-duration, .15s) var(--fade-opacity-timing, ease-in-out)
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: var(--fade-opacity, 0)
+}
+
+.fade-group .fade-leave-active {
+    position: absolute;
+    inset: 0
+}
+
+.scale-move,
+.scale-enter-active,
+.scale-leave-active {
+    transition: scale var(--scale-scale-duration, .35s) var(--scale-scale-timing, cubic-bezier(.33, 1, .68, 1)), opacity var(--scale-opacity-duration, .15s) var(--scale-opacity-timing, ease-in-out)
+}
+
+.scale-enter-from,
+.scale-leave-to {
+    opacity: var(--scale-opacity, 0);
+    scale: var(--scale-scale, .8)
+}
+
+.scale-group .scale-leave-active {
+    position: absolute;
+    inset: 0
+}
+
+.slide-y-move,
+.slide-y-enter-active,
+.slide-y-leave-active {
+    transition: translate var(--slide-y-translate-duration, .35s) var(--slide-y-translate-timing, cubic-bezier(.33, 1, .68, 1)), opacity var(--slide-y-opacity-duration, .15s) var(--slide-y-opacity-timing, ease-in-out)
+}
+
+.slide-y-enter-from,
+.slide-y-leave-to {
+    opacity: var(--slide-y-opacity, 0);
+    translate: 0 var(--slide-y-translateY, 8px)
+}
+
+.slide-y-group .slide-y-leave-active {
+    position: absolute;
+    inset: 0
+}
+
+.slide-y-reverse-move,
+.slide-y-reverse-enter-active,
+.slide-y-reverse-leave-active {
+    transition: translate var(--slide-y-reverse-translate-duration, .35s) var(--slide-y-reverse-translate-timing, cubic-bezier(.33, 1, .68, 1)), opacity var(--slide-y-reverse-opacity-duration, .15s) var(--slide-y-reverse-opacity-timing, ease-in-out)
+}
+
+.slide-y-reverse-enter-from,
+.slide-y-reverse-leave-to {
+    opacity: var(--slide-y-reverse-opacity, 0);
+    translate: 0 var(--slide-y-reverse-translateY, -8px)
+}
+
+.slide-y-reverse-group .slide-y-reverse-leave-active {
+    position: absolute;
+    inset: 0
+}
+
+.scroll-y-move,
+.scroll-y-enter-active,
+.scroll-y-leave-active {
+    transition: translate var(--scroll-y-translate-duration, .35s) var(--scroll-y-translate-timing, cubic-bezier(.33, 1, .68, 1)), opacity var(--scroll-y-opacity-duration, .15s) var(--scroll-y-opacity-timing, ease-in-out)
+}
+
+.scroll-y-enter-from {
+    opacity: var(--scroll-y-from-opacity, 0);
+    translate: 0 var(--scroll-y-from-translateY, 8px)
+}
+
+.scroll-y-leave-to {
+    opacity: var(--scroll-y-to-opacity, 0);
+    translate: 0 var(--scroll-y-to-translateY, -8px)
+}
+
+.scroll-y-group .scroll-y-leave-active {
+    position: absolute;
+    inset: 0
+}
+
+.scroll-y-reverse-move,
+.scroll-y-reverse-enter-active,
+.scroll-y-reverse-leave-active {
+    transition: translate var(--scroll-y-reverse-translate-duration, .35s) var(--scroll-y-reverse-translate-timing, cubic-bezier(.33, 1, .68, 1)), opacity var(--scroll-y-reverse-opacity-duration, .15s) var(--scroll-y-reverse-opacity-timing, ease-in-out)
+}
+
+.scroll-y-reverse-enter-from {
+    opacity: var(--scroll-y-reverse-from-opacity, 0);
+    translate: 0 var(--scroll-y-reverse-from-translateY, -8px)
+}
+
+.scroll-y-reverse-leave-to {
+    opacity: var(--scroll-y-reverse-to-opacity, 0);
+    translate: 0 var(--scroll-y-reverse-to-translateY, 8px)
+}
+
+.scroll-y-reverse-group .scroll-y-reverse-leave-active {
+    position: absolute;
+    inset: 0
+}
+
+.slide-x-move,
+.slide-x-enter-active,
+.slide-x-leave-active {
+    transition: translate var(--slide-x-translate-duration, .35s) var(--slide-x-translate-timing, cubic-bezier(.33, 1, .68, 1)), opacity var(--slide-x-opacity-duration, .15s) var(--slide-x-opacity-timing, ease-in-out)
+}
+
+.slide-x-enter-from,
+.slide-x-leave-to {
+    opacity: var(--slide-x-opacity, 0);
+    translate: var(--slide-x-translateX, -8px) 0
+}
+
+.slide-x-group .slide-x-leave-active {
+    position: absolute;
+    inset: 0
+}
+
+.slide-x-reverse-move,
+.slide-x-reverse-enter-active,
+.slide-x-reverse-leave-active {
+    transition: translate var(--slide-x-reverse-translate-duration, .35s) var(--slide-x-reverse-translate-timing, cubic-bezier(.33, 1, .68, 1)), opacity var(--slide-x-reverse-opacity-duration, .15s) var(--slide-x-reverse-opacity-timing, ease-in-out)
+}
+
+.slide-x-reverse-enter-from,
+.slide-x-reverse-leave-to {
+    opacity: var(--slide-x-reverse-opacity, 0);
+    translate: var(--slide-x-reverse-translateX, 8px) 0
+}
+
+.slide-x-reverse-group .slide-x-reverse-leave-active {
+    position: absolute;
+    inset: 0
+}
+
+.scroll-x-move,
+.scroll-x-enter-active,
+.scroll-x-leave-active {
+    transition: translate var(--scroll-x-translate-duration, .35s) var(--scroll-x-translate-timing, cubic-bezier(.33, 1, .68, 1)), opacity var(--scroll-x-opacity-duration, .15s) var(--scroll-x-opacity-timing, ease-in-out)
+}
+
+.scroll-x-enter-from {
+    opacity: var(--scroll-x-from-opacity, 0);
+    translate: var(--scroll-x-from-translateX, -8px) 0
+}
+
+.scroll-x-leave-to {
+    opacity: var(--scroll-x-to-opacity, 0);
+    translate: var(--scroll-x-to-translateX, 8px) 0
+}
+
+.scroll-x-group .scroll-x-leave-active {
+    position: absolute;
+    inset: 0
+}
+
+.scroll-x-reverse-move,
+.scroll-x-reverse-enter-active,
+.scroll-x-reverse-leave-active {
+    transition: translate var(--scroll-x-reverse-translate-duration, .35s) var(--scroll-x-reverse-translate-timing, cubic-bezier(.33, 1, .68, 1)), opacity var(--scroll-x-reverse-opacity-duration, .15s) var(--scroll-x-reverse-opacity-timing, ease-in-out)
+}
+
+.scroll-x-reverse-enter-from {
+    opacity: var(--scroll-x-reverse-from-opacity, 0);
+    translate: var(--scroll-x-reverse-from-translateX, 8px) 0
+}
+
+.scroll-x-reverse-leave-to {
+    opacity: var(--scroll-x-reverse-to-opacity, 0);
+    translate: var(--scroll-x-reverse-to-translateX, -8px) 0
+}
+
+.scroll-x-reverse-group .scroll-x-reverse-leave-active {
+    position: absolute;
+    inset: 0
+}
+
+.dialog-enter-active {
+    transition: scale .35s cubic-bezier(.16, 1, .3, 1), opacity .18s cubic-bezier(.5, 1, .89, 1)
+}
+
+.dialog-leave-active {
+    transition: scale .35s cubic-bezier(.16, 1, .3, 1), opacity .25s cubic-bezier(0, .55, .45, 1)
+}
+
+.dialog-enter-from,
+.dialog-leave-to {
+    opacity: 0;
+    scale: .45
+}
+
+.view-next-move,
+.view-next-enter-active,
+.view-next-leave-active {
+    transition: translate var(--view-next-translate-duration, .35s) var(--view-next-translate-timing, cubic-bezier(.33, 1, .68, 1))
+}
+
+.view-next-enter-from {
+    translate: var(--view-next-from-translateX, 100%) 0
+}
+
+.view-next-leave-to {
+    translate: var(--view-next-to-translateX, -100%) 0
+}
+
+.view-next-group .view-next-leave-active {
+    position: absolute;
+    inset: 0
+}
+
+.view-previous-move,
+.view-previous-enter-active,
+.view-previous-leave-active {
+    transition: translate var(--view-previous-translate-duration, .35s) var(--view-previous-translate-timing, cubic-bezier(.33, 1, .68, 1))
+}
+
+.view-previous-enter-from {
+    translate: var(--view-previous-from-translateX, -100%) 0
+}
+
+.view-previous-leave-to {
+    translate: var(--view-previous-to-translateX, 100%) 0
+}
+
+.view-previous-group .view-previous-leave-active {
+    position: absolute;
+    inset: 0
+}
+
+.bg-enter-active,
+.bg-leave-active {
+    transition: background-color .2s ease-in-out
+}
+
+.bg-enter-from,
+.bg-leave-to {
+    background-color: transparent !important
+}
+
+.expand-enter-active,
+.expand-leave-active {
+    overflow: hidden;
+    transition: block-size var(--expand-transition-duration, .25s) ease
+}
+
+.expand-enter-from,
+.expand-leave-to {
+    block-size: 0
+}
+
+*[data-v-0dd350b0] {
+    backface-visibility: hidden;
+    perspective: 1000px;
+    transform: translateZ(0);
+    will-change: block-size
+}
+
+@keyframes circular-dash-19444a0c {
+    0% {
+        stroke-dasharray: 1, 628;
+        stroke-dashoffset: 0px
+    }
+
+    50% {
+        stroke-dasharray: 300, 628;
+        stroke-dashoffset: -100px
+    }
+
+    to {
+        stroke-dasharray: 300, 628;
+        stroke-dashoffset: -600px
+    }
+}
+
+.animate-circular-dash .a-spinner-arc[data-v-19444a0c] {
+    animation: circular-dash-19444a0c 2s ease-in-out infinite
+}
+
+.a-tabs-wrapper::-webkit-scrollbar {
+    display: none
+}
+
+.a-tabs-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
