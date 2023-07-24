@@ -1,5 +1,5 @@
 {
-  "name": "parvus-css",
+  "name": "@parvus-css/variant",
   "version": "0.0.1",
   "description": "An atomic CSS library based on runtime.",
   "type": "module",
